@@ -1,5 +1,4 @@
 .home {
-
   .intro {
     padding: 90px 0 10px;
     border-bottom: 2px dashed @navigation-border;
@@ -20,8 +19,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -92,6 +89,9 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    transform: scale(0.9);
+    transform-origin: 0 0;
+    transition: transform 0.6s;
 
     @media @mobile {
       flex-wrap: wrap;
@@ -105,10 +105,13 @@
         width: 80%;
         margin: 0 auto 30px;
       }
-      
+
       .btn {
-        .button-creator(200px, 45px, @button-bg, @white, 1.8rem);     
+        .button-creator(200px, 45px, @button-bg, @white, 1.8rem);
       }
     }
   }
-}// home
+  .large {
+    transform: scale(5.3);
+  }
+} // home

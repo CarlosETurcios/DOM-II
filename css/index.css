@@ -319,6 +319,12 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+  transform: scale(0.9);
+  transform-origin: 0 0;
+  transition: transform 0.6s;
+}
+.home .content-pick .destination .large {
+  transform: scale(5.3);
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
